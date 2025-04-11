@@ -1,3 +1,7 @@
+from .. import loader
+import random
+
+
 @loader.tds
 class ChannelsWithModulesMod(loader.Module):
     strings = {
