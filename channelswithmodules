@@ -1,6 +1,7 @@
 from .. import loader
 import random
 
+
 @loader.tds
 class ChannelsWithModulesMod(loader.Module):
     strings = {
@@ -34,7 +35,6 @@ class ChannelsWithModulesMod(loader.Module):
         random.shuffle(channels)
 
         await message.edit(
-            message.chat_id,
             "🌘 <b>Список каналов с модулями</b>\n\n" + "\n".join(channels) + "\n\nСписок будет ещё расширяться!!!",
             parse_mode="html"
         )
