@@ -1,0 +1,36 @@
+from .. import loader
+import random
+import requests
+
+
+''''''
+
+
+@loader.tds
+class ChannelsWithModulesMod(loader.Module):
+    strings = {"name": "ChannelsWithModules", "desc": "Отправляет каналы с модулями для юзер бота", "help": ".channelsm - отправить каналы с модулями для юзер бота"}
+    async def channelsmcmd(self, message):
+        await message.client.send_message(message.chat_id, f'''
+🌘 Список каналов с модулями
+
+😶‍🌫️ @hikarimods
+😎 @famods
+🦋 @morisummermods
+💚 @nalinormods
+🤩 @AstroModules
+⭐️ @shadow_modules
+💪 @vsecoder_m
+☺️ @mm_mods
+😈 @apodiktum_modules
+😇 @wilsonmods
+👑 @DorotoroMods
+✌️ @HikkaFTGmods
+🐈‍⬛ @nercymods
+🎈 @hikka_mods
+😐 @sqlmerr_m
+🥰 @AuroraModules
+😄 @BHikkaMods
+🌟 @BchModules
+🥵 @userbotik
+Список будет ещё расширяться!!!
+        ''')
