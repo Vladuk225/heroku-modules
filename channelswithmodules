@@ -7,7 +7,7 @@ class ChannelsWithModulesMod(loader.Module):
     """Отправляет каналы с модулями для юзер бота"""
     strings = {
         "name": "ChannelsWithModules",
-        "help": "Используйте .channelsm, чтобы получить случайный список каналов с модулями для юзер бота."
+        "_cmd_doc_channelsm": "Используйте .channelsm, чтобы получить случайный список каналов с модулями для юзер бота."
     }
 
     async def channelsmcmd(self, message):
