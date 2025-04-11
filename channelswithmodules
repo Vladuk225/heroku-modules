@@ -4,9 +4,9 @@ import random
 
 @loader.tds
 class ChannelsWithModulesMod(loader.Module):
+    """Отправляет каналы с модулями для юзер бота"""
     strings = {
         "name": "ChannelsWithModules",
-        "desc": "Отправляет каналы с модулями для юзер бота",
         "help": "Используйте .channelsm, чтобы получить случайный список каналов с модулями для юзер бота."
     }
 
