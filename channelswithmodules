@@ -5,6 +5,7 @@ import random
 @loader.tds
 class ChannelsWithModulesMod(loader.Module):
     """Отправляет каналы с модулями для юзер бота"""
+    """Модуль был создан @Vladislav_225"""
     strings = {
         "name": "ChannelsWithModules",
     }
